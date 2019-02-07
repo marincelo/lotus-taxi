@@ -3,3 +3,16 @@
   margin: 15px 0;
   text-transform: none;
 }
+
+form {
+  width: 100%;
+  padding: 1rem;
+
+  @media (max-width: 768px) {
+    .datetimepicker {
+      &, & table {
+        width: calc(100% - 10px);
+      }
+    }
+  }
+}

@@ -47,4 +47,14 @@
     $('.navbar').removeClass('d-none');
   })
 
+  // init datepicker
+  $(document).ready(function() {
+    $('.datepicker').datetimepicker({
+      format: 'dd MM yyyy - hh:ii',
+      weekStart: 1,
+      autoclose: true,
+      container: '#picker-container'
+    });
+  })
+
 })(jQuery); // End of use strict
