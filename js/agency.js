@@ -55,6 +55,15 @@
       autoclose: true,
       container: '#picker-container'
     });
+
+    $("#contact-form").submit(function(e) {
+      e.preventDefault();
+
+      var $form = $(this);
+      $.post($form.attr('action'), $form.serialize()).then(function() {
+        alert('Thank you! Your request has been sent. Someone will contact you as soon as possible.');
+      });
+    });
   })
 
 })(jQuery); // End of use strict
