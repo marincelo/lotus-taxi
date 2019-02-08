@@ -76,7 +76,9 @@ function css() {
       suffix: ".min"
     }))
     .pipe(cleanCSS())
-
+    .pipe(
+      purgecss({ content: ['index.html']})
+    )
     .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
 }

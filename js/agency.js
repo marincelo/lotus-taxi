@@ -64,6 +64,32 @@
         alert('Thank you! Your request has been sent. Someone will contact you as soon as possible.');
       });
     });
+
+    var addresses = new Bloodhound({
+      initialize: false,
+      datumTokenizer: Bloodhound.tokenizers.whitespace,
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      remote: {
+        url: 'https://search.osmnames.org/hr/q/%QUERY.js?key=DG4glM5zzg9KeX8SSXLR',
+        wildcard: '%QUERY',
+        transform: function (res) {
+          var data = [];
+          for (var i = 0; i < res.results.length; i++) {
+            data.push(res.results[i].display_name);
+          }
+          return data;
+        }
+      }
+    });
+
+    $('.typeahead').typeahead({
+      hint: true,
+      highlight: true,
+      minLength: 3
+    }, {
+      name: 'addresses',
+      source: addresses
+    });
   })
 
 })(jQuery); // End of use strict

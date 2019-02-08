@@ -11231,3 +11231,31 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+.twitter-typeahead {
+  display: block !important;
+}
+
+.twitter-typeahead .tt-menu {
+  right: 0;
+  margin-top: 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.twitter-typeahead .tt-suggestion {
+  padding: 8px;
+  border-bottom: 1px solid #999;
+}
+
+.twitter-typeahead .tt-suggestion.tt-cursor {
+  color: #000;
+  background-color: #fed136;
+}
+
+.twitter-typeahead .tt-suggestion p {
+  margin: 0;
+}
