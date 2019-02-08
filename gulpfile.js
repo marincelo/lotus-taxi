@@ -78,7 +78,7 @@ function css() {
     .pipe(cleanCSS())
     .pipe(purgecss({
       content: ['index.html'],
-      whitelistPatternsChildren: [/twitter-typeahead/, /tt-menu/, /tt-suggestion/, /datetimepicker$/, /dropdown-menu$/]
+      whitelistPatternsChildren: [/twitter-typeahead/, /tt-menu/, /tt-suggestion/, /datetimepicker$/, /dropdown-menu$/, /navbar-shrink/]
     }))
     .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
