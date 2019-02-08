@@ -9,6 +9,8 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const pkg = require('./package.json');
+const purgecss = require('gulp-purgecss')
+
 
 // Set the banner content
 const banner = ['/*!\n',
@@ -74,6 +76,11 @@ function css() {
       suffix: ".min"
     }))
     .pipe(cleanCSS())
+    .pipe(
+      purgecss({
+        content: ['index.html']
+      })
+    )
     .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
 }
