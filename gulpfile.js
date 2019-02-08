@@ -76,9 +76,10 @@ function css() {
       suffix: ".min"
     }))
     .pipe(cleanCSS())
-    .pipe(
-      purgecss({ content: ['index.html']})
-    )
+    .pipe(purgecss({
+      content: ['index.html'],
+      whitelistPatternsChildren: [/twitter-typeahead/, /tt-menu/, /tt-suggestion/, /datetimepicker$/, /dropdown-menu$/]
+    }))
     .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
 }
