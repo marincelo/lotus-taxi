@@ -1,6 +1,9 @@
 // Core variables and mixins
 @import "variables.scss";
 @import "mixins.scss";
+// Vendor
+@import "bootstrap.scss";
+@import "bootstrap-datetimepicker.scss";
 // Global CSS
 @import "global.scss";
 // Components
