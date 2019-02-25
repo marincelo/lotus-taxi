@@ -60,9 +60,12 @@
       e.preventDefault();
 
       var $form = $(this);
-      $.post($form.attr('action'), $form.serialize()).then(function() {
-        alert('Thank you! Your request has been sent. Someone will contact you as soon as possible.');
-      });
+      $.post($form.attr('action'), $form.serialize())
+        .then(function() {
+          $('#contact-form').slideUp();
+          $('#thank-you').slideDown();
+        })
+        .catch(function() { alert('Something went wrong. Please try again.') });
     });
 
     var addresses = new Bloodhound({
