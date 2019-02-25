@@ -10784,15 +10784,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #f07c00;
 }
 
 a:hover {
-  color: #fec503;
+  color: #bd6200;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #f07c00 !important;
 }
 
 h1,
@@ -10841,13 +10841,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #f07c00;
+  border-color: #f07c00;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #ca6800 !important;
+  border-color: #ca6800 !important;
   color: white;
 }
 
@@ -10857,7 +10857,7 @@ section h3.section-subheading {
 }
 
 ::selection {
-  background: #fed136;
+  background: #f07c00;
   text-shadow: none;
 }
 
@@ -10880,17 +10880,22 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #f07c00;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #f07c00;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #bd6200;
+}
+
+#mainNav .navbar-brand img {
+  height: 3rem;
+  margin-right: 1rem;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -10903,7 +10908,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #f07c00;
 }
 
 @media (min-width: 992px) {
@@ -11067,7 +11072,7 @@ form {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #f07c00;
 }
 
 .timeline > li .timeline-image h4 {
@@ -11229,7 +11234,7 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #f07c00;
 }
 
 .twitter-typeahead {
@@ -11253,7 +11258,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .twitter-typeahead .tt-suggestion.tt-cursor {
   color: #000;
-  background-color: #fed136;
+  background-color: #f07c00;
 }
 
 .twitter-typeahead .tt-suggestion p {
