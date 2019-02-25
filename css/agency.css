@@ -11215,6 +11215,20 @@ footer ul.quicklinks {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+footer img {
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+footer p {
+  color: #f07c00;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+footer p.active, footer p:active, footer p:focus, footer p:hover {
+  color: #bd6200;
+}
+
 ul.social-buttons {
   margin-bottom: 0;
 }

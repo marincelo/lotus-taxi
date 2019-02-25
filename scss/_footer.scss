@@ -17,6 +17,22 @@ footer {
     text-transform: none;
     @include heading-font;
   }
+
+  img {
+    height: 4rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    color: $primary;
+    @include script-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
 }
 
 ul.social-buttons {
