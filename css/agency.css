@@ -10869,6 +10869,10 @@ img::-moz-selection {
   background: transparent;
 }
 
+#thank-you {
+  display: none;
+}
+
 #mainNav {
   background-color: #212529;
 }
