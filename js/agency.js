@@ -21,10 +21,10 @@
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
-  });
+  // $('body').scrollspy({
+  //   target: '#mainNav',
+  //   offset: 56
+  // });
 
   // Collapse Navbar
   var navbarCollapse = function() {
@@ -53,7 +53,8 @@
       format: 'dd MM yyyy - hh:ii',
       weekStart: 1,
       autoclose: true,
-      container: '#picker-container'
+      container: '#picker-container',
+      startDate: new Date()
     });
 
     $("#contact-form").submit(function(e) {
@@ -69,9 +70,11 @@
     });
 
     var addresses = new Bloodhound({
-      initialize: false,
+      initialize: true,
+      local: ["Trogir","Kastela","Makarska","Airport Split","Airport Zadar","Airport Dubrovnik","Marina Frapa","Marina Kastela","Marina Lav","Marina Kremik","Marina Kornati","Marina Sukosan","Vodice","Pakostane","Primosten"],
       datumTokenizer: Bloodhound.tokenizers.whitespace,
       queryTokenizer: Bloodhound.tokenizers.whitespace,
+      sufficient: 8,
       remote: {
         url: 'https://search.osmnames.org/hr/q/%QUERY.js?key=DG4glM5zzg9KeX8SSXLR',
         wildcard: '%QUERY',

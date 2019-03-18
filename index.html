@@ -34,7 +34,6 @@
         Lotus Taxi Trogir
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -45,30 +44,33 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.villaarany.com/" target="_blank">Accomodation</a>
+          </li>
         </ul>
         <ul class="list-inline social-buttons text-center">
           <li class="list-inline-item">
-            <a href="tel:+385913000326">
+            <a href="tel:+385913000326" aria-label="Call Lotus Taxi">
               <i class="fa fa-phone"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://wa.me/385913000326?text=I need a pickup!" target="_blank">
+            <a href="https://wa.me/385913000326?text=I need a pickup!" target="_blank" aria-label="Send Whatsapp message">
               <i class="fab fa-whatsapp"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="mailto:lotus.taxi.trogir@gmail.com">
+            <a href="mailto:lotus.taxi.trogir@gmail.com" aria-label="Send email to Lotus Taxi">
               <i class="fa fa-envelope"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://instagram.com/lotus.taxi.trogir" target="_blank">
+            <a href="https://instagram.com/lotus.taxi.trogir" target="_blank" aria-label="Instagram page">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.facebook.com/TaxiTrogirLotus/" target="_blank">
+            <a href="https://www.facebook.com/TaxiTrogirLotus/" target="_blank" aria-label="Facebook page">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
@@ -102,7 +104,7 @@
           <div class="form-row">
             <div class="form-group col-md-6" id="picker-container">
               <label for="pickup-date">Pickup Time</label>
-              <input type="text" name="pickup-time" class="form-control datepicker" id="pickup-date" placeholder="Today" readonly required>
+              <input type="text" name="pickup-time" class="form-control datepicker" id="pickup-date" placeholder="Today" readonly required autocomplete="off">
             </div>
             <div class="form-group col-md-6">
               <label for="pickup-address">Pickup Address</label>
@@ -110,16 +112,22 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="dropoff-address">Destination Address (optional)</label>
-            <input type="text" name="dropoff-address" class="form-control typeahead" id="dropoff-address" placeholder="Trogir">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="lotus.taxi.trogir@gmail.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="dropoff-address">Destination Address (optional)</label>
+              <input type="text" name="dropoff-address" class="form-control typeahead" id="dropoff-address" placeholder="Trogir" autocomplete="off">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phone-number">Phone Number (optional)</label>
+              <input type="tel" name="phone-number" class="form-control" id="phone-number" placeholder="+385913000326">
+            </div>
           </div>
           <div class="form-group">
-            <label for="phone-number">Phone Number (optional)</label>
-            <input type="tel" name="phone-number" class="form-control" id="phone-number" placeholder="+385913000326">
-          </div>
-          <div class="form-group">
-            <label for="email">Email (optional)</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="lotus.taxi.trogir@gmail.com">
+            <label for="notes">Notes (optional)</label>
+            <textarea class="form-control" id="notes" name="notes"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-xl btn-block">Send</button>
         </form>
@@ -212,7 +220,7 @@
                   <p class="text-muted">
                     The transfer service is tailored to your needs. No matter what your needs are, we are available 24 hours a day.
                     <br>
-                    Our 20-year experience gives us the advantage of identifying your needs and adjusting the transfer according to your needs.
+                    Our experience gives us the advantage of identifying your needs and adjusting the transfer according to your needs.
                   </p>
                 </div>
               </div>
@@ -256,27 +264,27 @@
         <div class="col-md-6">
           <ul class="list-inline social-buttons text-center">
             <li class="list-inline-item">
-              <a href="tel:+385913000326">
+              <a href="tel:+385913000326" aria-label="Call Lotus Taxi">
                 <i class="fa fa-phone"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://wa.me/385913000326?text=I need a pickup!" target="_blank">
+              <a href="https://wa.me/385913000326?text=I need a pickup!" target="_blank" aria-label="Send Whatsapp message">
                 <i class="fab fa-whatsapp"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="mailto:lotus.taxi.trogir@gmail.com">
+              <a href="mailto:lotus.taxi.trogir@gmail.com" aria-label="Send email to Lotus Taxi">
                 <i class="fa fa-envelope"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://instagram.com/lotus.taxi.trogir" target="_blank">
+              <a href="https://instagram.com/lotus.taxi.trogir" target="_blank" aria-label="Instagram page">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.facebook.com/TaxiTrogirLotus/" target="_blank">
+              <a href="https://www.facebook.com/TaxiTrogirLotus/" target="_blank" aria-label="Facebook page">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>

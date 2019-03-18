@@ -100,3 +100,9 @@ img::-moz-selection {
 #thank-you {
   display: none;
 }
+
+textarea {
+  @include body-font;
+
+  min-height: 6rem;
+}
