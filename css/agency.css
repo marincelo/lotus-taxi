@@ -11005,7 +11005,7 @@ header.masthead .intro-text .intro-subtitle {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   header.masthead .intro-text .intro-subtitle {
-    margin-bottom: 5000px;
+    margin-bottom: 50px;
     font-size: 35px;
   }
 }
