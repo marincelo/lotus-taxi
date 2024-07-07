@@ -59,7 +59,12 @@
 
     $("#contact-form").submit(function(e) {
       e.preventDefault();
-
+      var value = $('#pickup-date').val();
+      var date = Date.parse(value.replace('-', ''));
+      if (!value && !date) {
+        alert('Please specify pickup date.');
+        return;
+      }
       var $form = $(this);
       $.post($form.attr('action'), $form.serialize())
         .then(function() {
