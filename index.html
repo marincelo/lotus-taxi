@@ -125,10 +125,6 @@
       <div class="row">
         <form id="contact-form" netlify netlify-honeypot="fill-time">
           <div class="form-row">
-            <div class="form-group col-md-6" style="display: none">
-              <label for="fill-time">Fill this</label>
-              <input type="text" name="fill-time" class="form-control" id="fill">
-            </div>
             <div class="form-group col-md-6" id="picker-container">
               <label for="pickup-date">Pickup Time</label>
               <input type="text" name="pickup-time" class="form-control datepicker" id="pickup-date" placeholder="Today" readonly required autocomplete="off">
@@ -155,6 +151,10 @@
           <div class="form-group">
             <label for="notes">Notes (optional)</label>
             <textarea class="form-control" id="notes" name="notes"></textarea>
+          </div>
+          <div class="form-group col-md-6" style="display: none">
+            <label for="fill-time">Fill this</label>
+            <input type="text" name="fill-time" class="form-control" id="fill">
           </div>
           <button type="submit" class="btn btn-primary btn-xl btn-block">Send</button>
         </form>
